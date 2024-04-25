@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChoroplethMap</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>    
+    <div class="topnav">
+        <a href="kickstarter.html">Kickstarter</a>
+        <a class="active" href="index.html">Movies</a>
+    </div>
+
+    <h1 id='title' x="450" y="20">Movie Sales</h1>
+    <h3 id='description' x="450" y="50">Top 100 Highest Grossing Movies Grouped By Genre</h3>
+    <div id="tooltip"></div>
+    <svg id="canvas"></svg>
+    <p> <br> </p>
+
+    <svg id="legend" >
+        <g>
+            <rect class="legend-item" x="20" y="5" width="20" height="20" fill='Olive'> </rect>
+            <text x="50" y="20"  fill='black'> Action </text>
+        </g>
+        <g>
+            <rect class="legend-item" x="20" y="45" width="20" height="20" fill='OrangeRed'> </rect>
+            <text x="50" y="60"  fill='black'> Adventure</text>
+        </g>
+        <g>
+            <rect class="legend-item" x="20" y="85" width="20" height="20" fill='Teal'> </rect>
+            <text x="50" y="100"  fill='black'> Comedy </text>
+        </g>
+        <g>
+            <rect class="legend-item" x="20" y="125" width="20" height="20" fill='Grey'> </rect>
+            <text x="50" y="140"  fill='black'> Drama</text>
+        </g>
+        <g>
+            <rect class="legend-item" x="160" y="5" width="20" height="20" fill='Chocolate'> </rect>
+            <text x="190" y="20"  fill='black'> Animation </text>
+        </g>
+        <g>
+            <rect class="legend-item" x="160" y="45" width="20" height="20" fill='DarkMagenta'> </rect>
+            <text x="190" y="60"  fill='black'> Family </text>
+        </g>
+        <g>
+            <rect class="legend-item" x="160" y="85" width="20" height="20" fill='PaleVioletRed'> </rect>
+            <text x="190" y="100"  fill='black'> Biography </text>
+        </g>
+    </svg> 
+
+
+    
+</body>
+    <script defer src='scriptMovie.js'></script>
+    <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</html>
